@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  display: flex;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left #logo {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.left #title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left #title h1 {
+  color: #f4f4f4;
+}
+.sign {
+  width: 60%;
+  margin: 3rem 0;
+}
+.sign .box {
+  color: #f4f4f4;
+  width: 100%;
+  padding: 6px 3px;
+  margin: 3px 0 1rem 0;
+  border-radius: 2px;
+  background-color: black;
+  border: 2px solid #868181;
+}
+.sign .text {
+  color: #f4f4f4;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+.sign .but {
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #f4f4f4;
+  background-color: #13d2c2;
+  border-radius: 2px;
+  border: none;
+  height: auto;
+  padding: 0.7rem 1rem;
+}
+
+.sign #link a {
+  display: block;
+  color: #f4f4f4;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.7rem;
+}
+
+.sign #or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.sign #or span {
+  color: #f4f4f4;
+  text-transform: uppercase;
+  margin: 0rem 1rem;
+}
+.sign #or hr {
+  background-color: #f4f4f4;
+  width: 30%;
+  border: 0;
+  height: 1px;
+}
+.sign .but-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+.sign .but-1 button {
+  width: 80%;
+  color: #f4f4f4;
+  background-color: black;
+  border-radius: 2px;
+  border: 2px solid #f4f4f4;
+  height: 35px;
+}
+footer {
+  text-align: center;
+  padding-top: 5rem;
+}
+footer p {
+  color: #f4f4f4;
+  font-size: 0.7rem;
+}
+footer a {
+  color: #13d2c2;
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: url("./img/back.jfif") no-repeat center center;
+  background-size: cover;
+}
+.right h1 {
+  color: #f4f4f4;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.right button {
+  color: #f4f4f4;
+  background: none;
+  border: 2px solid #f4f4f4;
+  width: 250px;
+  height: 30px;
+  margin-top: 1.5rem;
+  border-radius: 2px;
+}
+/* Media Query */
+@media (max-width: 768px) {
+  .right {
+    display: none;
+  }
+}
